@@ -1,16 +1,8 @@
-//host: ec2-54-225-92-1.compute-1.amazonaws.com
-//db: des8c6i3m6i1tj
-//user: ujdipllsymkgzb
-//port: 5432
-//pw: 20367870764faadc4bcbf2cba658785858dbe68636fb4ff98592e96495b37152
-//URI: postgres://ujdipllsymkgzb:20367870764faadc4bcbf2cba658785858dbe68636fb4ff98592e96495b37152@ec2-54-225-92-1.compute-1.amazonaws.com:5432/des8c6i3m6i1tj
-
-
 const Sequelize = require('sequelize');
 
 // set up sequelize to point to our postgres database
-var sequelize = new Sequelize('des8c6i3m6i1tj','ujdipllsymkgzb','20367870764faadc4bcbf2cba658785858dbe68636fb4ff98592e96495b37152', {
-    host: 'ec2-54-225-92-1.compute-1.amazonaws.com',     
+var sequelize = new Sequelize('db','users','', {
+    host: 'host',     
     dialect: 'postgres',     
     port: 5432,     
     dialectOptions: {         
