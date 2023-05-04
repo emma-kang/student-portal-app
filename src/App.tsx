@@ -1,13 +1,5 @@
-import './App.css';
-import { Button } from './components';
+import Login from './pages/Login.tsx';
 
-function App() {
-  return (
-    <>
-      <h1>TEST</h1>
-      <Button variant="primary">Button</Button>
-    </>
-  );
-}
+const App = () => <Login />;
 
 export default App;
