@@ -2,7 +2,7 @@ import { TextInputProps } from './types/Props.ts';
 import tw, { css } from 'twin.macro';
 
 const styles = {
-  input: (hasError?: boolean) => [tw`p-2 border rounded-md w-full`, hasError ? tw`border-rose` : tw`border-gray-400`],
+  input: (hasError?: boolean) => [tw`p-2 border rounded-md w-full`, hasError ? tw`border-buff` : tw`border-gray-400`],
 };
 
 const TextInput = ({ name, type, label, placeholder, hasError }: TextInputProps) => {

@@ -3,10 +3,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        space: '#22223B',
-        ultra: '#4A4E69',
-        rose: '#9A8C98',
-        pale: '#C9ADA7',
+        green: '#CCD5AE',
+        cornsilk: '#FEFAE0',
+        beige: '#E9EDC9',
+        papaya: '#FAEDCD',
+        buff: '#D4A373',
         info: '#00B8D9',
         warn: '#FFAB00',
         error: '#FF5630',

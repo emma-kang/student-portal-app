@@ -5,6 +5,7 @@ import { LockClosedIcon, UserIcon } from '@heroicons/react/24/solid';
 const LoginForm = () => {
   return (
     <form>
+      <p tw="text-2xl font-semibold">Student Portal</p>
       <div tw="flex items-center mb-3">
         <div tw="pr-2">
           <UserIcon tw="w-6 h-6 text-gray-600" />
@@ -21,7 +22,7 @@ const LoginForm = () => {
           <TextInput name="password" type="password" placeholder="password" />
         </div>
       </div>
-      <div tw="text-right underline text-ultra font-semibold my-3">
+      <div tw="text-right underline my-3">
         <a href="#">Forgot Password?</a>
       </div>
       <div tw="flex flex-col justify-center gap-y-3">

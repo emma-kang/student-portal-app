@@ -5,9 +5,9 @@ const Button = styled.button(({ variant, isSmall }: ButtonProps) => [
   tw`px-8 py-2 rounded-full transform duration-75 font-semibold`,
   // tw`hocus:(bg-violet-400)`,
 
-  variant === 'primary' && tw`bg-space text-white`,
+  variant === 'primary' && tw`bg-green text-white`,
 
-  variant === 'secondary' && tw`bg-ultra`,
+  variant === 'secondary' && tw`bg-buff`,
 
   isSmall ? tw`text-sm` : tw`text-lg`,
   css`
