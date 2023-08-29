@@ -1,11 +1,17 @@
 import { TextInputProps } from './types/Props.ts';
-import Input from './Input.tsx';
+import tw, { css } from 'twin.macro';
 
-export const TextInput = ({ name, type, label, placeholder, hasError }: TextInputProps) => {
+const styles = {
+  input: (hasError?: boolean) => [tw`p-2 border rounded-md w-full`, hasError ? tw`border-rose` : tw`border-gray-400`],
+};
+
+const TextInput = ({ name, type, label, placeholder, hasError }: TextInputProps) => {
   return (
     <>
       {!!label && <label htmlFor={name}>{label}</label>}
-      <Input hasError={hasError} type={type ? type : 'text'} name={name} placeholder={placeholder} />
+      <input css={styles.input(hasError)} type={type ? type : 'text'} name={name} placeholder={placeholder} />
     </>
   );
 };
+
+export default TextInput;

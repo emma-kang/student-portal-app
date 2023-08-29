@@ -3,7 +3,7 @@ import { ButtonProps } from './types/Props.ts';
 
 const Button = styled.button(({ variant, isSmall }: ButtonProps) => [
   tw`px-8 py-2 rounded-full transform duration-75 font-semibold`,
-  tw`hocus:(text-yellow-400)`,
+  // tw`hocus:(bg-violet-400)`,
 
   variant === 'primary' && tw`bg-space text-white`,
 
