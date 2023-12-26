@@ -7,7 +7,7 @@ const LoginForm = () => {
     <form>
       <div tw="flex items-center mb-3">
         <div tw="pr-2">
-          <UserIcon tw="w-6 h-6 text-gray-600" />
+          <UserIcon tw="w-6 h-6" />
         </div>
         <div tw="flex-1">
           <TextInput name="email" placeholder="Email" />
@@ -15,13 +15,13 @@ const LoginForm = () => {
       </div>
       <div tw="flex items-center mb-3">
         <div tw="pr-2">
-          <LockClosedIcon tw="w-6 h-6 text-gray-600" />
+          <LockClosedIcon tw="w-6 h-6" />
         </div>
         <div tw="flex-1">
           <TextInput name="password" type="password" placeholder="password" />
         </div>
       </div>
-      <div tw="text-right underline text-ultra font-semibold my-3">
+      <div tw="text-right underline font-semibold my-3">
         <a href="#">Forgot Password?</a>
       </div>
       <div tw="flex flex-col justify-center gap-y-3">

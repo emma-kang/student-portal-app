@@ -1,5 +1,5 @@
-import { TextInputProps } from './types/Props.ts';
-import tw, { css } from 'twin.macro';
+import { TextInputProps } from '../types/Props.ts';
+import tw from 'twin.macro';
 
 const styles = {
   input: (hasError?: boolean) => [tw`p-2 border rounded-md w-full`, hasError ? tw`border-rose` : tw`border-gray-400`],
